@@ -1,10 +1,8 @@
-
 #Load the CSV reader and the OS path interpreter
 import os
 import csv
 
-#bank_csv = os.path.join("..", "python-challenge","py-bank","budget_data.csv")
-#Open and read the file. The first row is a header
+ #Open and read the file. The first row is a header
 
 with open('budget_data.csv', 'r') as csvfile:
     next(csvfile)
@@ -39,13 +37,23 @@ with open('budget_data.csv', 'r') as csvfile:
             PLLowest = int(column[1])
             LowDate = str(column[0])
  #Do all the writing and printing      
-       
-    PLAverage += (total/num_lines)
-    print("Number of Months: " + str(num_lines))    
-    print ("Total Profit or Loss: " + str(total))
-    print ("Average Profit/Loss  " + str(PLAverage))
-    print ("Highest Increase  " + HighDate + "  " + str(PLHighest))
-    print ("Highest Decrease  " + LowDate  + "  " + str(PLLowest) )
+
+f = open("budget_results.txt", "w")
+f.write("Budget Info\n")
+
+PLAverage = "{:.2f}".format((total/num_lines))
+print("Number of Months: " + str(num_lines))  
+    
+f.write("Number of Months: " + str(num_lines)+" \n") 
+
+print ("Total Profit or Loss: " + str(total))
+f.write ("Total Profit or Loss: " + str(total)+" \n") 
+print ("Average Profit/Loss  " + str(PLAverage))
+f.write ("Average Profit/Loss  " + str(PLAverage)+" \n") 
+print ("Highest Increase  " + HighDate + "  " + str(PLHighest))
+f.write("Highest Increase  " + HighDate + "  " + str(PLHighest)+" \n") 
+print ("Highest Decrease  " + LowDate  + "  " + str(PLLowest) )
+f.write ("Highest Decrease  " + LowDate  + "  " + str(PLLowest)+" \n") 
 
 
 

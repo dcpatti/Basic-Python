@@ -1,0 +1,7 @@
+Election Results
+Candidate Count: 4 
+Votes Cast: 3521001 
+Candidate: Khan - Votes: 2,218,231 (63.00%)
+Candidate: Correy - Votes: 704,200 (20.00%)
+Candidate: Li - Votes: 492,940 (14.00%)
+Candidate: O'Tooley - Votes: 105,630 (3.00%)

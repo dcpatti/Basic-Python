@@ -1,0 +1,6 @@
+Budget Info
+Number of Months: 86 
+Total Profit or Loss: 38382578 
+Average Profit/Loss  446309.05 
+Highest Increase  Feb-2012  1170593 
+Highest Decrease  Sep-2013  -1196225 
