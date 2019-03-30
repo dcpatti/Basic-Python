@@ -49,6 +49,7 @@ f.write("Number of Months: " + str(num_lines)+" \n")
 
 print ("Total Profit or Loss: " + str(total))
 f.write ("Total Profit or Loss: " + str(total)+" \n") 
+#the trailing " \n" are needed to get a line break in the output file
 print ("Average Profit/Loss  " + str(PLAverage))
 f.write ("Average Profit/Loss  " + str(PLAverage)+" \n") 
 print ("Highest Increase  " + HighDate + "  " + str(PLHighest))
