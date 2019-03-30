@@ -36,11 +36,12 @@ with open('budget_data.csv', 'r') as csvfile:
         elif int(column[1]) < PLLowest:
             PLLowest = int(column[1])
             LowDate = str(column[0])
- #Do all the writing and printing      
+ #Do all the writing and printing  
+ #First open a file to hold the output
 
 f = open("budget_results.txt", "w")
 f.write("Budget Info\n")
-
+#clean up the formatting of the Average
 PLAverage = "{:.2f}".format((total/num_lines))
 print("Number of Months: " + str(num_lines))  
     
@@ -57,4 +58,3 @@ f.write ("Highest Decrease  " + LowDate  + "  " + str(PLLowest)+" \n")
 
 
 
-#Need to circle back and add the Print to File instructions 
